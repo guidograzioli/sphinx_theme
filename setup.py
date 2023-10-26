@@ -6,7 +6,7 @@ import typing as t
 
 from setuptools import find_packages, setup
 
-from ansible_middleware_theme import __VERSION__ as VERSION
+from amw_theme import __VERSION__ as VERSION
 
 directory = os.path.abspath(os.path.dirname(__file__))
 
