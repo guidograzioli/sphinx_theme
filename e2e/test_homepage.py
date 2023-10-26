@@ -18,7 +18,7 @@ def test_homepage(page: Page):
     # Github Link
     page.locator('#source_link').click()
     expect(page).to_have_url(re.compile(
-        'https://github.com/piccolo-orm/piccolo_theme/'))
+        'https://github.com/amw-orm/amw_theme/'))
 
     # Dark Mode
     page.goto(BASE_URL)
@@ -37,12 +37,12 @@ def test_homepage(page: Page):
 
     # Check external Sphinx Link
     page.goto(BASE_URL)
-    link = page.locator('//*[@id="piccolo-theme"]/p/a')
+    link = page.locator('//*[@id="amw-theme"]/p/a')
     expect(link).to_have_text("Sphinx")
     expect(link).to_have_attribute(
         "href", "https://www.sphinx-doc.org/en/master/")
 
     # Link Check Setup
     page.goto(BASE_URL)
-    page.locator('//*[@id="piccolo-theme"]/div/ul/li[1]/a').click()
+    page.locator('//*[@id="amw-theme"]/div/ul/li[1]/a').click()
     expect(page).to_have_title(re.compile("Setup"))

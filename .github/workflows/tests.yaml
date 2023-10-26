@@ -2,9 +2,9 @@ name: Test Suite
 
 on:
     push:
-        branches: ["master"]
+        branches: ["main"]
     pull_request:
-        branches: ["master"]
+        branches: ["main"]
 
 jobs:
     test_sphinx:
@@ -28,7 +28,7 @@ jobs:
               run: pip install breathe==4.35.0
             - name: Install wheel
               run: pip install wheel
-            - name: Install piccolo_theme
+            - name: Install amw_theme
               run: python setup.py install
             - name: Build docs
               run: make html

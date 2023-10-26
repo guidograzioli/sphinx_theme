@@ -6,7 +6,7 @@ import typing as t
 
 from setuptools import find_packages, setup
 
-from piccolo_theme import __VERSION__ as VERSION
+from ansible_middleware_theme import __VERSION__ as VERSION
 
 directory = os.path.abspath(os.path.dirname(__file__))
 
@@ -22,18 +22,18 @@ def parse_requirement(req_path: str) -> t.List[str]:
 
 
 setup(
-    name="piccolo_theme",
+    name="amw_theme",
     version=VERSION,
     description="A modern Sphinx theme.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    author="Daniel Townsend",
-    author_email="dan@dantownsend.co.uk",
+    author="Guido Grazioli",
+    author_email="ggraziol@redhat.com",
     python_requires=">=3.6.0",
-    url="https://github.com/piccolo-orm/piccolo_theme",
+    url="https://github.com/ansible-middleware/amw_theme",
     packages=find_packages(),
     package_data={
-        "piccolo_theme": [
+        "amw_theme": [
             "*.html",
             "**/*.html",
             "theme.conf",
@@ -57,7 +57,7 @@ setup(
     ],
     entry_points={
         "sphinx.html_themes": [
-            "piccolo_theme = piccolo_theme",
+            "amw_theme = amw_theme",
         ]
     },
 )

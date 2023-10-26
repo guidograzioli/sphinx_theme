@@ -16,7 +16,7 @@ def setup(app: 'Sphinx'):
     """
 
     app.add_html_theme(
-        "piccolo_theme", os.path.abspath(os.path.dirname(__file__))
+        "amw_theme", os.path.abspath(os.path.dirname(__file__))
     )
 
     ###########################################################################

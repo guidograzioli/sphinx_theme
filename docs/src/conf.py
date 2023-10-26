@@ -50,8 +50,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'piccolo_theme'
-html_short_title = 'Piccolo Theme'
+html_theme = 'amw_theme'
+html_short_title = 'Ansible Middleware Theme'
 # Enabling this line will change the nav title from a text to an image:
 # html_logo = './static/awesome_logo.png'
 

@@ -25,14 +25,14 @@ Install Piccolo Theme
 
 .. code-block:: bash
 
-    pip install piccolo_theme
+    pip install amw_theme
 
 Find the ``conf.py`` file that Sphinx generated for you. Within that set the
 following value:
 
 .. code-block:: python
 
-    html_theme = 'piccolo_theme'
+    html_theme = 'amw_theme'
 
 -------------------------------------------------------------------------------
 
